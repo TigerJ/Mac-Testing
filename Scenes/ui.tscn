@@ -15,11 +15,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 0
 texture = ExtResource("2_4y5sq")
 
 [connection signal="mouse_entered" from="CanvasLayer/Control/TextureRect" to="." method="_on_texture_rect_mouse_entered"]
