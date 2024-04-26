@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://b02gn7lvh016a"]
+
+[ext_resource type="Script" path="res://UI.gd" id="1_o27ug"]
+[ext_resource type="Texture2D" uid="uid://b2io0qrmjwdek" path="res://icon.svg" id="2_4y5sq"]
+
+[node name="UI" type="Node2D"]
+script = ExtResource("1_o27ug")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_4y5sq")
+
+[connection signal="mouse_entered" from="CanvasLayer/Control/TextureRect" to="." method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Control/TextureRect" to="." method="_on_texture_rect_mouse_exited"]
