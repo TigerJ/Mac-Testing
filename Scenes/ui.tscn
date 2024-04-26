@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b02gn7lvh016a"]
 
 [ext_resource type="Script" path="res://UI.gd" id="1_o27ug"]
-[ext_resource type="Texture2D" uid="uid://b2io0qrmjwdek" path="res://icon.svg" id="2_4y5sq"]
+[ext_resource type="Texture2D" uid="uid://w0xpsi4bpqub" path="res://goat1.png" id="2_ljgfx"]
 
 [node name="UI" type="Node2D"]
 script = ExtResource("1_o27ug")
@@ -19,10 +19,10 @@ mouse_filter = 2
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 384.0
+offset_bottom = 384.0
 mouse_filter = 0
-texture = ExtResource("2_4y5sq")
+texture = ExtResource("2_ljgfx")
 
 [connection signal="mouse_entered" from="CanvasLayer/Control/TextureRect" to="." method="_on_texture_rect_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Control/TextureRect" to="." method="_on_texture_rect_mouse_exited"]
